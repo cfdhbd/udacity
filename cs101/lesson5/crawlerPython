@@ -1,0 +1,22 @@
+Original code:
+
+def crawler(page):
+
+    page = page[end_quote:]
+    start_link = page.find('<a href=')
+    start_quote = page.find('"', start_link)
+    end_quote = page.find('"', start_quote +1)
+    url = page[start_quote + 1: end_quote]
+
+"but the above code needs to change because it does not account for # of url links
+
+
+"added new code (get_next_targets)
+
+
+def get_next_target(S):
+    start_link = S.find('<a href =')
+    start_quote = S.find('"', start_link_
+    end_quote = S.find('"', start_quote +1)
+    url = S[start_quote +1:end_quote]
+    return url, end_quote
