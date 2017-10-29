@@ -1,0 +1,93 @@
+
+this code is for a crawler to take multiple URLs from a webpage
+
+
+Learning procedural abstraction
+
+inputs --> procedure --> outputs
+same code can operate on different inputs
+
+format:
+
+def <name>(<parameters>):
+    <block>
+
+
+Quiz: what should the inputs be for the procedure? (get_next_target)
+Answer: string giving contents of the rest of the web page (only care about the contents of the rest of the webpage, not anything that happened before)
+
+
+
+Q: what should be the outputs of get_next_target?
+A: url, end_quote
+
+self-driving car interlude
+
+
+Using Procedures
+
+<procedure>(<input>,<input>....must match number procedure expects..aka operands / arguments)
+
+
+in page.find('au', 3) page is also considered an input
+
+
+def rest_of_string(s):
+    return s[1:]
+
+print rest_of_string('audacity')
+
+^ this will return 'udacity'
+
+
+Quiz: what does the inc procedure defined below do?
+    def inc(n):
+        return n+!
+Answer: takes input and outputs that number plus one
+
+
+Quiz: what does the sum procedure do?
+    def sum(a,b):
+        a = a+b
+Answer: it doesn't output anything..needs a return statement
+
+
+Quiz: define procedure, square, that takes one number as input, and returns the square of that number
+Answer:    def square(a):
+                a = a*a
+                return a
+            print square(5)
+
+
+example of procedure composition:
+print square(square(x))
+
+
+Quiz sum3
+def sum3(a,b,c):
+    return a+b+c
+
+Quiz abbaize
+takes 2 strings as inputs, outputs string = first input + 2 second input + first input
+
+def abbaize(a,b):
+    return a+b+b+a
+
+print abbaize('a','b')
+#>>> 'abba'
+
+
+challenging gold star quiz
+"define procedure, find_second, that takes 2 strings as inputs: a search string and a target string. it should output a number that is the position of the second occurence of the target string in the search string"
+
+def find_second(search, target)
+    position1 = search.find(target)
+    position 2 = search.find(target, position1+1)
+    return position2
+
+
+
+
+if statements
+
+define procedure, is_friend, take string as input and output boolean if string is friend. only look for friends that start with D
