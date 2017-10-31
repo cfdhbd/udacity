@@ -78,7 +78,7 @@ print abbaize('a','b')
 
 
 challenging gold star quiz
-"define procedure, find_second, that takes 2 strings as inputs: a search string and a target string. it should output a number that is the position of the second occurence of the target string in the search string"
+#define procedure, find_second, that takes 2 strings as inputs: a search string and a target string. it should output a number that is the position of the second occurence of the target string in the search string"
 
 def find_second(search, target)
     position1 = search.find(target)
@@ -91,3 +91,34 @@ def find_second(search, target)
 if statements
 
 define procedure, is_friend, take string as input and output boolean if string is friend. only look for friends that start with D
+
+same as before, but now with D & N
+
+challenging quiz
+biggest --> takes 3 numbers as inputs, outputs the greatest
+
+def biggest(a,b,c):
+    if a>b and a>c:
+        return a
+    if b>c:
+        return b
+    else:
+        return c
+
+
+while loops
+
+while <testExpression>:
+    <block>
+
+define print_numbers that takes input as positive whole number and prints out all the whole numbers from 1 to the whole number
+
+quiz factorial
+
+break statement
+while <testExpression>:
+    <code>
+    if <breakTest>:
+        break
+    <moreCodeNot Executed if break occurs>
+<goes to code after while>
