@@ -1,0 +1,7 @@
+define, countdown, that takes a positive whole number as its input and prints a countdown from that number to 1 followed by blastoff
+
+def countdown(a):
+    while a!=0:
+        print(a)
+        a = a-1
+    print 'Blastoff!'

@@ -1,0 +1,10 @@
+define procedure, find_last, that takes 2 strings (a search & target string) and outputs the last position in the search string where the target string appears, or -1 if there are no occurrences
+
+
+def find_lost(s,t):
+  last_pos = -1
+  while True:
+    pos = s.find(t, last_pos +1)
+    if pos == -1:
+      return last_pos
+    last_pos = pos

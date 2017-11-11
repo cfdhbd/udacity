@@ -1,0 +1,48 @@
+#find all procedures with same meaning as:
+
+def proc(a,b):
+    if test(a):
+        return b
+    return a
+
+
+
+A)
+def proc1(x,y):
+    if test(x):
+        return y
+    else:
+        return x
+
+SAME
+
+
+B)
+def proce2(a,b):
+    if not test(b):
+        return a
+    else:
+        return b
+
+ Not same
+
+
+C)
+def proc3(a,b):
+    result = a
+    if test(a):
+        result = b
+    return result
+
+Same (because depends on if being True)
+
+D)
+
+def proc4(a,b):
+    if not test(a):
+        b = 'udacity'
+    else:
+        return b
+    return a
+
+same
